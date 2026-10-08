@@ -1,0 +1,125 @@
+.sidebar {
+  width: 240px;
+  min-width: 240px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.sidebar-brand {
+  padding: 16px 14px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+}
+
+.sidebar-logo {
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.sidebar-title-group {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-app-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  line-height: 1.25;
+}
+
+.sidebar-college-name {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.sidebar-menu {
+  flex: 1;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+}
+
+.sidebar-section-divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 6px 0;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 8.5px 12px;
+  border-radius: var(--radius);
+  color: var(--text-body);
+  font-size: 13.5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.12s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #f1f5f9;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.sidebar-link.active {
+  background-color: #eff6ff;
+  color: var(--primary-navy);
+  font-weight: 700;
+  border-left: 3px solid var(--primary-blue);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.sidebar-footer {
+  padding: 12px 14px;
+  border-top: 1px solid var(--border-color);
+  background-color: #ffffff;
+}
+
+.sidebar-logout-btn {
+  background-color: #ffffff;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-border);
+  padding: 7px 12px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: all 0.12s ease;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: var(--danger-bg);
+  border-color: #f87171;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+}

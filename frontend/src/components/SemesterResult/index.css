@@ -1,0 +1,119 @@
+/* Semester Result & Marksheet Styling */
+.result-selection-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-200);
+  border-radius: var(--radius-lg);
+  padding: 22px 26px;
+  box-shadow: var(--shadow-sm);
+}
+
+.results-sheet-card {
+  background-color: var(--card-bg);
+  border: 1.5px solid var(--border-200);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-200);
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.sheet-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-900);
+  letter-spacing: -0.4px;
+}
+
+.sheet-header p {
+  font-size: 13.5px;
+  color: var(--text-600);
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sheet-sem-badge {
+  background: var(--grad-primary);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13.5px;
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-glow-primary);
+  letter-spacing: 0.3px;
+}
+
+.result-summary-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: linear-gradient(180deg, #fafbfc 0%, #f1f5f9 100%);
+  border: 1.5px solid var(--border-200);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.summary-left {
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+  color: var(--text-700);
+  flex-wrap: wrap;
+}
+
+.summary-left strong {
+  color: var(--text-900);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.result-final-status {
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.status-passed {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #065f46;
+  border: 1.5px solid #10b981;
+}
+
+.status-failed {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  color: #991b1b;
+  border: 1.5px solid #ef4444;
+}
+
+@media (max-width: 600px) {
+  .sheet-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-summary-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
